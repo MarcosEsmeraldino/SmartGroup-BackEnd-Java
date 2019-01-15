@@ -11,12 +11,12 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="hibernate.connection.autocommit">false</property>
         
-        <mapping class="com.smartgroup.backend.bean.Comentario"/>
-        <mapping class="com.smartgroup.backend.bean.Enquete"/>
-        <mapping class="com.smartgroup.backend.bean.Opcao"/>
-        <mapping class="com.smartgroup.backend.bean.Usuario"/>
-        <mapping class="com.smartgroup.backend.bean.Voto"/>
-        <mapping class="com.smartgroup.backend.bean.VotoOpcao"/>
+        <mapping class="com.smartgroup.bean.Comentario"/>
+        <mapping class="com.smartgroup.bean.Enquete"/>
+        <mapping class="com.smartgroup.bean.Opcao"/>
+        <mapping class="com.smartgroup.bean.Usuario"/>
+        <mapping class="com.smartgroup.bean.Voto"/>
+        <mapping class="com.smartgroup.bean.VotoOpcao"/>
 
     </session-factory>
 </hibernate-configuration>
