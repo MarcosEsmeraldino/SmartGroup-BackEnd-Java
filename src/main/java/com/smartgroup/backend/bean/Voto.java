@@ -1,5 +1,6 @@
 package com.smartgroup.backend.bean;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;

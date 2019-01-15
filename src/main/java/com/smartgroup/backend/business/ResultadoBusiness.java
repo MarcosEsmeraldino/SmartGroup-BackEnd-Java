@@ -42,21 +42,18 @@ public class ResultadoBusiness {
         
         // ordena respostas pela melhor avaliação
         //https://dzone.com/articles/how-to-sort-a-map-by-value-in-java-8
-/*        LinkedHashMap<Long, Integer> respostasSorted = respostas.entrySet()
+        LinkedHashMap<Long, Integer> respostasSorted = respostas.entrySet()
             .stream()
             .sorted((Map.Entry.<Long, Integer>comparingByValue().reversed()))
             .collect(Collectors.toMap(
                     Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, 
                     LinkedHashMap::new));
-        */
+        
         // return
         Resultado r = new Resultado();
         r.setDataRegistro(new Date());
         r.setEnquete(idEnquete);
-        //r.setRespostas(respostasSorted);
-        r.setRespostas(respostas);
-        
-        System.out.println(r);
+        r.setRespostas(respostasSorted);
         
         return r;
     }

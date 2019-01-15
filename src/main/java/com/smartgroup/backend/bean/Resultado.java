@@ -1,12 +1,12 @@
 package com.smartgroup.backend.bean;
 
 import java.util.Date;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 public class Resultado {
     private long enquete;
     private Date dataRegistro;
-    private HashMap<Long, Integer> respostas; // id-opção, votos
+    private LinkedHashMap<Long, Integer> respostas; // id-opção, votos
 
     public Date getDataRegistro() {
         return dataRegistro;
@@ -16,11 +16,11 @@ public class Resultado {
         this.dataRegistro = dataRegistro;
     }
 
-    public HashMap<Long, Integer> getRespostas() {
+    public LinkedHashMap<Long, Integer> getRespostas() {
         return respostas;
     }
 
-    public void setRespostas(HashMap<Long, Integer> respostas) {
+    public void setRespostas(LinkedHashMap<Long, Integer> respostas) {
         this.respostas = respostas;
     }
 

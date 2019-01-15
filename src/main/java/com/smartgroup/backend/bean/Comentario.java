@@ -1,6 +1,5 @@
 package com.smartgroup.backend.bean;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Column;
@@ -24,7 +23,6 @@ public class Comentario implements Serializable {
     private Usuario autor;
     
     @ManyToOne(optional = false)
-    @JsonIgnore
     private Enquete enquete;
     
     @Column(length = 256, nullable = false)
